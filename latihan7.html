@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 7</title>
+</head>
+<body>
+    
+    <script>
+        hadir = window.prompt("Masukkan jumlah kehadiran mahasiswa pada hari Senin");
+        document.write("Grafik Jumlah Kehadiran Mahasiswa");
+        document.write("<br>Senin  : ");
+        counter(hadir);
+        
+        hadir = window.prompt("Masukkan jumlah kehadiran mahasiswa pada hari Selasa");
+        document.write("<br>Selasa : ");
+        counter(hadir);
+
+        hadir = window.prompt("Masukkan jumlah kehadiran mahasiswa pada hari Rabu");
+        document.write("<br>Rabu   : ");
+        counter(hadir);
+
+        hadir = window.prompt("Masukkan jumlah kehadiran mahasiswa pada hari Kamis");
+        document.write("<br>Kamis  : ");
+        counter(hadir);
+
+        hadir = window.prompt("Masukkan jumlah kehadiran mahasiswa pada hari Jumat");
+        document.write("<br>Jumat  : ");
+        counter(hadir);
+
+        function counter(hadir)
+        {
+            for(i = 0; i < hadir; i++)
+            {
+                document.write("x")
+            }
+        }
+    </script>
+</body>
+</html>

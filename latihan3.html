@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 3</title>
+</head>
+
+<body>
+
+    <script>
+        time = window.prompt("Jam sekarang")
+        alert(timeGreeting(time));
+
+        function timeGreeting(time)
+        {
+            if(time >= 6 && time <= 10)
+            {
+                return "Selamat pagi";
+            }
+            else if(time >= 11 && time <= 14)
+            {
+                return "Selamat siang";
+            }
+            else if(time >= 15 && time <= 17)
+            {
+                return "Selamat sore";
+            }
+            else if(time >= 18 && time <= 22)
+            {
+                return "Selamat malam";
+            }
+            else if(time >= 23 && time <=24 || time >= 0 && time <= 5)
+            {
+                return "Selamat tidur";
+            }
+            else
+            {
+                return "Invalid";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 4</title>
+</head>
+
+<body>
+
+    <script>
+        do
+        {
+        choice = window.prompt('Hitung "luas" atau "keliling"?');
+    
+            if (choice == "luas" || choice == "Luas" || choice == "LUAS") 
+            {
+                alert("Luas: " + hitungLuas());
+            }
+            else if (choice == "keliling" || choice == "Keliling" || choice == "KELILING") 
+            {
+                alert("Keliling: " + hitungKeliling());
+            }
+
+            function hitungLuas() 
+            {
+                panjang = window.prompt('Masukkan panjang');
+                lebar = window.prompt('Masukkan lebar');
+                return panjang * lebar;
+            }
+
+            function hitungKeliling() 
+            {
+                panjang = window.prompt('Masukkan panjang');
+                lebar = window.prompt('Masukkan lebar');
+                return 2 * panjang + 2 * lebar;
+            }
+        }while (choice !== "luas" && choice !== "Luas" && choice !== "LUAS" && choice !== "keliling" && choice !== "Keliling" && choice !== "KELILING");
+
+    </script>
+</body>
+
+</html>
